@@ -1,0 +1,241 @@
+[
+  {
+    "arguments": [
+      "/home/kuba/opt/cross/bin/i686-elf-gcc",
+      "--sysroot=/home/kuba/Repositories/bigOS/sysroot",
+      "-isystem=/usr/include",
+      "-c",
+      "-std=gnu11",
+      "-O2",
+      "-g",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "stdio/printf.libk.o",
+      "stdio/printf.c"
+    ],
+    "directory": "/home/kuba/Repositories/bigOS/libc",
+    "file": "/home/kuba/Repositories/bigOS/libc/stdio/printf.c",
+    "output": "/home/kuba/Repositories/bigOS/libc/stdio/printf.libk.o"
+  },
+  {
+    "arguments": [
+      "/home/kuba/opt/cross/bin/i686-elf-gcc",
+      "--sysroot=/home/kuba/Repositories/bigOS/sysroot",
+      "-isystem=/usr/include",
+      "-c",
+      "-std=gnu11",
+      "-O2",
+      "-g",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "stdio/putchar.libk.o",
+      "stdio/putchar.c"
+    ],
+    "directory": "/home/kuba/Repositories/bigOS/libc",
+    "file": "/home/kuba/Repositories/bigOS/libc/stdio/putchar.c",
+    "output": "/home/kuba/Repositories/bigOS/libc/stdio/putchar.libk.o"
+  },
+  {
+    "arguments": [
+      "/home/kuba/opt/cross/bin/i686-elf-gcc",
+      "--sysroot=/home/kuba/Repositories/bigOS/sysroot",
+      "-isystem=/usr/include",
+      "-c",
+      "-std=gnu11",
+      "-O2",
+      "-g",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "stdio/puts.libk.o",
+      "stdio/puts.c"
+    ],
+    "directory": "/home/kuba/Repositories/bigOS/libc",
+    "file": "/home/kuba/Repositories/bigOS/libc/stdio/puts.c",
+    "output": "/home/kuba/Repositories/bigOS/libc/stdio/puts.libk.o"
+  },
+  {
+    "arguments": [
+      "/home/kuba/opt/cross/bin/i686-elf-gcc",
+      "--sysroot=/home/kuba/Repositories/bigOS/sysroot",
+      "-isystem=/usr/include",
+      "-c",
+      "-std=gnu11",
+      "-O2",
+      "-g",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "stdlib/abort.libk.o",
+      "stdlib/abort.c"
+    ],
+    "directory": "/home/kuba/Repositories/bigOS/libc",
+    "file": "/home/kuba/Repositories/bigOS/libc/stdlib/abort.c",
+    "output": "/home/kuba/Repositories/bigOS/libc/stdlib/abort.libk.o"
+  },
+  {
+    "arguments": [
+      "/home/kuba/opt/cross/bin/i686-elf-gcc",
+      "--sysroot=/home/kuba/Repositories/bigOS/sysroot",
+      "-isystem=/usr/include",
+      "-c",
+      "-std=gnu11",
+      "-O2",
+      "-g",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "string/memcmp.libk.o",
+      "string/memcmp.c"
+    ],
+    "directory": "/home/kuba/Repositories/bigOS/libc",
+    "file": "/home/kuba/Repositories/bigOS/libc/string/memcmp.c",
+    "output": "/home/kuba/Repositories/bigOS/libc/string/memcmp.libk.o"
+  },
+  {
+    "arguments": [
+      "/home/kuba/opt/cross/bin/i686-elf-gcc",
+      "--sysroot=/home/kuba/Repositories/bigOS/sysroot",
+      "-isystem=/usr/include",
+      "-c",
+      "-std=gnu11",
+      "-O2",
+      "-g",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "string/memcpy.libk.o",
+      "string/memcpy.c"
+    ],
+    "directory": "/home/kuba/Repositories/bigOS/libc",
+    "file": "/home/kuba/Repositories/bigOS/libc/string/memcpy.c",
+    "output": "/home/kuba/Repositories/bigOS/libc/string/memcpy.libk.o"
+  },
+  {
+    "arguments": [
+      "/home/kuba/opt/cross/bin/i686-elf-gcc",
+      "--sysroot=/home/kuba/Repositories/bigOS/sysroot",
+      "-isystem=/usr/include",
+      "-c",
+      "-std=gnu11",
+      "-O2",
+      "-g",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "string/memmove.libk.o",
+      "string/memmove.c"
+    ],
+    "directory": "/home/kuba/Repositories/bigOS/libc",
+    "file": "/home/kuba/Repositories/bigOS/libc/string/memmove.c",
+    "output": "/home/kuba/Repositories/bigOS/libc/string/memmove.libk.o"
+  },
+  {
+    "arguments": [
+      "/home/kuba/opt/cross/bin/i686-elf-gcc",
+      "--sysroot=/home/kuba/Repositories/bigOS/sysroot",
+      "-isystem=/usr/include",
+      "-c",
+      "-std=gnu11",
+      "-O2",
+      "-g",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "string/memset.libk.o",
+      "string/memset.c"
+    ],
+    "directory": "/home/kuba/Repositories/bigOS/libc",
+    "file": "/home/kuba/Repositories/bigOS/libc/string/memset.c",
+    "output": "/home/kuba/Repositories/bigOS/libc/string/memset.libk.o"
+  },
+  {
+    "arguments": [
+      "/home/kuba/opt/cross/bin/i686-elf-gcc",
+      "--sysroot=/home/kuba/Repositories/bigOS/sysroot",
+      "-isystem=/usr/include",
+      "-c",
+      "-std=gnu11",
+      "-O2",
+      "-g",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "string/strlen.libk.o",
+      "string/strlen.c"
+    ],
+    "directory": "/home/kuba/Repositories/bigOS/libc",
+    "file": "/home/kuba/Repositories/bigOS/libc/string/strlen.c",
+    "output": "/home/kuba/Repositories/bigOS/libc/string/strlen.libk.o"
+  },
+  {
+    "arguments": [
+      "/home/kuba/opt/cross/bin/i686-elf-gcc",
+      "--sysroot=/home/kuba/Repositories/bigOS/sysroot",
+      "-isystem=/usr/include",
+      "-c",
+      "-O2",
+      "-g",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "arch/i386/boot.o",
+      "arch/i386/boot.S"
+    ],
+    "directory": "/home/kuba/Repositories/bigOS/kernel",
+    "file": "/home/kuba/Repositories/bigOS/kernel/arch/i386/boot.S",
+    "output": "/home/kuba/Repositories/bigOS/kernel/arch/i386/boot.o"
+  },
+  {
+    "arguments": [
+      "/home/kuba/opt/cross/bin/i686-elf-gcc",
+      "--sysroot=/home/kuba/Repositories/bigOS/sysroot",
+      "-isystem=/usr/include",
+      "-c",
+      "-std=gnu11",
+      "-O2",
+      "-g",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "arch/i386/tty.o",
+      "arch/i386/tty.c"
+    ],
+    "directory": "/home/kuba/Repositories/bigOS/kernel",
+    "file": "/home/kuba/Repositories/bigOS/kernel/arch/i386/tty.c",
+    "output": "/home/kuba/Repositories/bigOS/kernel/arch/i386/tty.o"
+  },
+  {
+    "arguments": [
+      "/home/kuba/opt/cross/bin/i686-elf-gcc",
+      "--sysroot=/home/kuba/Repositories/bigOS/sysroot",
+      "-isystem=/usr/include",
+      "-c",
+      "-std=gnu11",
+      "-O2",
+      "-g",
+      "-ffreestanding",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "kernel/kernel.o",
+      "kernel/kernel.c"
+    ],
+    "directory": "/home/kuba/Repositories/bigOS/kernel",
+    "file": "/home/kuba/Repositories/bigOS/kernel/kernel/kernel.c",
+    "output": "/home/kuba/Repositories/bigOS/kernel/kernel/kernel.o"
+  }
+]
