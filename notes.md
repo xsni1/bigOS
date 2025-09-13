@@ -33,11 +33,16 @@ There is some segment of memory, that is being 24/7 scanned/polled (?) by VGA (G
 
 ### Header files
 
-Headers are located in /usr/include directory - those are OS specific headers (libc etc.) - it seems like those are the headers that are omitted when compiling
-gcc from sources with --without-headers flag. On the other hand, headers located in /lib/gcc/... are headers that are always with the compiler, even when compiling
+Headers are located in /usr/include directory - those are OS specific headers (libc etc.) (provided by the OS) - it seems like those are the headers that are omitted when compiling
+gcc from sources with --without-headers flag. On the other hand, headers located in /lib/gcc/... (THOSE ARE STANDARD LIBRARY C HEADERS? - not really standard C library headers are split - some like stddef are defined in /lib/gcc, while other like stdio.h in /usr/include) are headers that are always with the compiler, even when compiling
 freestading binary.
 
 ### Default library
+
+Standard library is a set of functionalities defined by ISO standards (probably) - basically standard specifies names of those HEADERS - and it makes a lot of sense,
+because if we have some C program that uses some standard C library functionalities it has to be portable on all OSes. If everyone used differenly named headers
+it would not be possible.
+So, ISO defines how our headers should be named and what functionalities they have to define - concrete libc implementation just implements those headers.
 
 As I already know, each OS provides user-space library, that provides basic functionalities like strlen, printf etc.
 Important thing to know is that kernel itself cannot use it! It is quite logical - we could cause circular dependency + those functions
