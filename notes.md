@@ -62,6 +62,11 @@ quite ofte use syscalls that are implemented by kernel too.
      a w osobnym juz stepie linker bierze nasz obiekt + obiekt libki, ktora to implementuje funkcjonalnosci ktorej my oczekujemy (to definijemy przy pomocy headera).
 
 
+TODO rozkminic jak linkowana jest ta libka (libk), ale prawodpobonie ma to zwiazek z tym,
+ze order w config.sh tego jak kompilowane sa projekty ma znaczenie.
+tj. kompilujac juz kernel mamy libk na swoim miejscu w sysroocie, a skoro tak, to kompilator na etapie kompilowania (chyba ze to juz linker), jest w stanie znalezc libk.a pod standardowa sciezka
+
+
 
 vars used:
 export PREFIX="$HOME/opt/cross"

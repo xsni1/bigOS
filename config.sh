@@ -1,7 +1,9 @@
-# SYSTEM_HEADER_PROJECTS="kernel"
-# PROJECTS="kernel"
 SYSTEM_HEADER_PROJECTS="libc kernel"
 PROJECTS="libc kernel"
+
+# order matters and it makes sense!
+# SYSTEM_HEADER_PROJECTS="kernel libc"
+# PROJECTS="kernel libc"
 
 export MAKE=${MAKE:-make}
 export HOST=${HOST:-$(./default-host.sh)}
