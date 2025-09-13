@@ -49,6 +49,19 @@ Important thing to know is that kernel itself cannot use it! It is quite logical
 quite ofte use syscalls that are implemented by kernel too.
 
 
+### Build process
+
+ 1. make install-headers wrzuca headery w sysroot/usr/include/kernel/
+ 2 poniewaz do kompilacji dodawana jest flaga isystem=$INCLDUEDIR (INCLDUEDIR = /usr/include), kompilator wie gdzie szuakc headerow
+
+     pytanie czemu inclduedir nie ma /sysroot/ - ok, nie ma /sysroot/, bo dodajemy flage --sysroot=$SYSROOT
+
+     ok, tak offtopowo jeszzce: kompilator sam w sobie pracuje na jednym pliku, produkujac object jako output.
+     on nie sprawdza czy header istnieje itp. to tez jest pewna forma "decouplowania",
+     definiujemy sobie w ramach modulu czego oczekujemy od innej libki przy pomocy headera, i kompilujemy.
+     a w osobnym juz stepie linker bierze nasz obiekt + obiekt libki, ktora to implementuje funkcjonalnosci ktorej my oczekujemy (to definijemy przy pomocy headera).
+
+
 
 vars used:
 export PREFIX="$HOME/opt/cross"

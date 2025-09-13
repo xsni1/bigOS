@@ -27,4 +27,3 @@ export CC="$CC --sysroot=$SYSROOT"
 if echo "$HOST" | grep -Eq -- '-elf($|-)'; then
   export CC="$CC -isystem=$INCLUDEDIR"
 fi
-
