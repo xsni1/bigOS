@@ -18,6 +18,8 @@ targeting our target platform - that's all - such executables can be used to com
         - GCC during compilation takes linker script.
         - Different sections are mmap'd into proper locations in the memory - section at some file offset => virtual memory address.
         https://wiki.osdev.org/ELF
+        cool example: https://github.com/mlouielu/linker_script_vma_lma_example
+        https://mcyoung.xyz/2021/06/01/linker-script/
 
 ### Multiboot format
 

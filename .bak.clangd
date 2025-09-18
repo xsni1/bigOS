@@ -1,9 +1,0 @@
-CompileFlags:
-  Add:
-    - --target=i686-elf
-    - --sysroot=/home/kuba/opt/cross/i686-elf
-    - -isystem/home/kuba/opt/cross/lib/gcc/i686-elf/15.2.0/include
-    - -ffreestanding
-    - -fno-exceptions
-    - -fno-rtti
-    - -nostdlib
