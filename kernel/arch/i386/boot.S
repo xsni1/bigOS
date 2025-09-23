@@ -111,6 +111,9 @@ _start:
 	# Set up the stack.
 	mov $stack_top, %esp
 
+    push %eax
+    push %ebx
+
 	# Enter the high-level kernel.
 	call kernel_main
 

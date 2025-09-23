@@ -50,6 +50,8 @@ As I already know, each OS provides user-space library, that provides basic func
 Important thing to know is that kernel itself cannot use it! It is quite logical - we could cause circular dependency + those functions
 quite ofte use syscalls that are implemented by kernel too.
 
+ctype is some crazy stuff, even found some article: https://drewdevault.com/2020/09/25/A-story-of-two-libcs.html
+
 
 ### Build process
 
@@ -68,6 +70,19 @@ TODO rozkminic jak linkowana jest ta libka (libk), ale prawodpobonie ma to zwiaz
 ze order w config.sh tego jak kompilowane sa projekty ma znaczenie.
 tj. kompilujac juz kernel mamy libk na swoim miejscu w sysroocie, a skoro tak, to kompilator na etapie kompilowania (chyba ze to juz linker), jest w stanie znalezc libk.a pod standardowa sciezka
 
+
+### Memory management
+
+#### Physical memory
+
+Kernel has to somehow manage the physical memory that is used by each running process (via virtual memory abstraction).
+MMU hardware uses page directory that is stored in CR3 registry, during each context switch we have to provide proper page directory for a process.
+Swapping CR3 causes TLB flush, this is why context switches aren't good for performance in user-space processes - we flush cache.
+
+To manage the physical memory we first have to determine how much of RAM is there to manage (and which areas are we allowed to? idk).
+We also have to decide what address space we want to use, i will probably just store it right after kernel stuff in phyiscal memory
+
+What I don't understand in 100% is how exactly does each process have its own mapping, is it page faults that result in OS providing correct physical pages?
 
 
 vars used:
